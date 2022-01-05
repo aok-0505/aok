@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>マッチングサイト</title>
+    <meta name="description" content="あなたにぴったりのお相手が探せる">
+  </head>
+
+  <body>
+    <header>
+     <h1>トップメニュー</h1>
+     <h2>マッチング相手を検索</h2>
+     <p>あなたの情報を入力してください！AIが相性のいいお相手を探します！</p>
+    </header>
+
+   <main>
+    <form method="get" name="contact-form">
+      <p>お名前</p>
+      <input type="text" name="name" placeholder="山田　花子">
+      <p>性別</p>
+      <input type="radio" name="gender" value="男性" id="men">
+      <label for="men">男性</label>
+      <input type="radio" name="gender" value="女性" checked id="women">
+      <label for="women">女性</label>
+      <input type="radio" name="gender" value="その他" checked id="other">
+      <label for="women">その他</label>
+      <p>生年月日</p>
+      <input type="date" name="calendar" max="9999-12-31" id="birthday">
+      <p>血液型</p>
+      <select name="bloodtype">
+       <option value="A">A</option>
+       <option value="B">B</option>
+       <option value="O">O</option>
+       <option value="AB">AB</option>
+       <option value="　" selected>　<option>
+      </select>
+      <p>自己紹介</p>
+      <textarea name="introduction"></textarea>
+      <p>LINE ID</p>
+      <input type="text" name="lineid">
+      <p></p>
+      <p><input type="button" value="マッチング" onClick="location.href='./qrcode.html'"></p>
+    </form>
+   </main>
+  </body>
+</html>
